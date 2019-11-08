@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+  yamlfmt:
+    build:
+      context: .
+      args:
+        VERSION: v1.1.0
+    image: petski/yamlfmt
