@@ -8,7 +8,7 @@ RUN apk add --no-cache python3 git curl patch \
     && git clone https://github.com/mmlb/yamlfmt.git \
     && cd yamlfmt \
     && git checkout ${VERSION} \
-    && curl -s -L https://github.com/mmlb/yamlfmt/pull/12.patch | patch -p1 \
+    && curl -s -L https://github.com/mmlb/yamlfmt/pull/14.patch | patch -p1 \
     && apk add --no-cache git curl patch \
     && cd /usr/local/src/yamlfmt \
     && pip3 install . \
