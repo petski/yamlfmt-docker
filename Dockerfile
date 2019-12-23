@@ -9,7 +9,7 @@ RUN apk add --no-cache python3 git curl patch \
     && cd yamlfmt \
     && git checkout ${VERSION} \
     && curl -s -L https://github.com/mmlb/yamlfmt/pull/14.patch | patch -p1 \
-    && apk add --no-cache git curl patch \
+    && apk del --no-cache git curl patch \
     && cd /usr/local/src/yamlfmt \
     && pip3 install . \
     && rm -rf /usr/local/src/yamlfmt \
